@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { reverse } from "./reverse";
 
 const Mylist = () => {
   const [items, setItems] = useState(["Angular", "Ember", "React"]);
 
   const onReverseClick = () => {
-    setItems([...items].reverse())
+    setItems(reverse(items))
   };
 
   return (

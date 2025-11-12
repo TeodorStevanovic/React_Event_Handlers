@@ -9,8 +9,8 @@ This component shows how to use multiple event handlers on a single input elemen
 The `onChange` handler logs a message when the input value changes,  
 and the `onBlur` handler logs a message when the input loses focus.
 
-# MyList Component with Immutable Reverse
+# MyList Component with Generic Reverse Function
 
-This React component displays a list of items and includes a button to reverse the order of the list.  
-The reversal is done immutably by creating a copy of the array with the spread operator before applying `.reverse()`.  
-This approach ensures React correctly detects state changes and updates the UI efficiently.
+This React project demonstrates separation of concerns by moving the array reversal logic into a reusable generic function.  
+The `reverse` function creates a new reversed array without mutating the original, and is imported into the `MyList` component.  
+This approach improves code reusability and maintainability.
