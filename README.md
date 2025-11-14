@@ -1,7 +1,6 @@
 # MyButton Component
 
-A simple React component that displays a button and uses a declarative approach to handle the click event.  
-When the user clicks the button, the message "Clicked" is logged in the console.
+The MyButton component has been updated to function as a counter. It includes two buttons: "+" to increment and "−" to decrement the count. The onClick event handler is used to manage the count state changes.
 
 # React Multiple Event Handlers Example
 
