@@ -8,8 +8,24 @@ This component shows how to use multiple event handlers on a single input elemen
 The `onChange` handler logs a message when the input value changes,  
 and the `onBlur` handler logs a message when the input loses focus.
 
-# MyList Component with Generic Reverse Function
+# Mylist Component
 
-This React project demonstrates separation of concerns by moving the array reversal logic into a reusable generic function.  
-The `reverse` function creates a new reversed array without mutating the original, and is imported into the `MyList` component.  
-This approach improves code reusability and maintainability.
+## Description
+
+`Mylist` is a React functional component that receives an array of objects as a prop called `items`. Each object in the array should have the properties `id` and `name`.
+
+The component renders a dynamic list (`<ul>`) where each list item (`<li>`) displays the `name` of the object and has a unique React `key` based on the `id`.
+
+Each list item also has a click event handler (`onClick`) that, when clicked, finds the corresponding object by `id` and logs its name to the console.
+
+## Usage
+
+```jsx
+const items = [
+  { id: 0, name: "First" },
+  { id: 1, name: "Second" },
+  { id: 2, name: "Third" },
+];
+
+<Mylist items={items} />;
+```

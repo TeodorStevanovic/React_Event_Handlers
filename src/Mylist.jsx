@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { reverse } from "./reverse";
 
-const Mylist = () => {
-  const [items, setItems] = useState(["Angular", "Ember", "React"]);
-
-  const onReverseClick = () => {
-    setItems(reverse(items))
+const Mylist = ({ items }) => {
+  const onClick = (id) => {
+    const item = items.find((i) => i.id === id);
+    console.log(`clicked, ${item.name}`);
   };
 
   return (
     <section>
-      <button onClick={onReverseClick}>Reverse</button>
       <ul>
-        {items.map((i) => (
-          <li key={i}>{i}</li>
+        {items.map((item) => (
+          <li key={item.id} onClick={onClick.bind(null, item.id)}>
+            {item.name}
+          </li>
         ))}
       </ul>
     </section>
