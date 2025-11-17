@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import MyButton from "./Mybutton";
 import Myinput from "./Myinput";
-import Mylist from "./Mylist";
+import MyList from "./MyList";
 
 const items = [
   { id: 0, name: "First" },
@@ -12,7 +12,7 @@ const items = [
 createRoot(document.getElementById("root")).render(
   <>
     <MyButton>Click</MyButton>
-    <Myinput />
-    <Mylist items={items}/>
+    <Myinput>Enter Your Name:</Myinput>
+    <MyList>Reverse</MyList>
   </>
 );

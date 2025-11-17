@@ -1,17 +1,16 @@
 import React from "react";
 
-const Myinput = () => {
-    const onChange = () => {
-        console.log("Change input value");
-    }
+const Myinput = (props) => {
+  const changeInput = () => console.log("Change Input Value.");
 
-    const onBlur = () => {
-        console.log("Blured")
-    }
+  const changeBlur = () => console.log("Change Blur");
 
-    return (
-        <input onChange={onChange} onBlur={onBlur} />
-    )
+  return (
+    <>
+      <label>{props.children}</label>
+      <input onChange={changeInput} onBlur={changeBlur} />
+    </>
+  );
 };
 
 export default Myinput;

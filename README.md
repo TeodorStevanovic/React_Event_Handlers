@@ -6,9 +6,10 @@ The text placed between <MyButton>...</MyButton> is rendered inside the button u
 
 # React Multiple Event Handlers Example
 
-This component shows how to use multiple event handlers on a single input element in React.  
-The `onChange` handler logs a message when the input value changes,  
-and the `onBlur` handler logs a message when the input loses focus.
+This component shows how to use multiple event handlers on a single input element in React.
+The onChange handler logs a message when the input value changes,
+and the onBlur handler logs a message when the input loses focus.
+The label text is passed via props.children.
 
 # Mylist Component
 
