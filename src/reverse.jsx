@@ -1,3 +1,3 @@
-// export const reverse = (item) => {
-//     return [...item].reverse();
-// }
+export const reverse = (item) => {
+    return [...item].reverse();
+}
