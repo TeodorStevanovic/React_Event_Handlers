@@ -11,7 +11,7 @@ const items = [
 
 createRoot(document.getElementById("root")).render(
   <>
-    <MyButton />
+    <MyButton>Click</MyButton>
     <Myinput />
     <Mylist items={items}/>
   </>

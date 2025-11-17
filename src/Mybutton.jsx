@@ -1,23 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
-const MyButton = () => {
-  const [count, setCount] = useState(0);
-
-  const incrementClick = () => {
-    setCount(count + 1);
-  };
-
-  const decrementClick = () => {
-    setCount(count - 1);
-  };
+const MyButton = (props) => {
+  const checkedBtn = () => console.log("Checked.");
 
   return (
-    <section>
-      <button onClick={decrementClick}>-</button>
-      <p>{count}</p>
-      <button onClick={incrementClick}>+</button>
-    </section>
-  );
+    <button onClick={checkedBtn}>{props.children}</button>
+  )
 };
 
 export default MyButton;

@@ -1,6 +1,8 @@
-# MyButton Component
+# React Event Handler Example
 
-The MyButton component has been updated to function as a counter. It includes two buttons: "+" to increment and "−" to decrement the count. The onClick event handler is used to manage the count state changes.
+This component shows a simple event handler in React.
+A function is triggered when the button is clicked, logging "Checked." to the console.
+The text placed between <MyButton>...</MyButton> is rendered inside the button using props.children.
 
 # React Multiple Event Handlers Example
 
