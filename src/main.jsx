@@ -3,6 +3,7 @@ import MyButton from "./Mybutton";
 import Myinput from "./MyInput";
 import MyList from "./MyList";
 import ClickableList from "./ClickableList";
+import MultiButtonCounter from "./MultiButtonCounter";
 
 const items = [
   { id: 0, name: "First" },
@@ -16,5 +17,6 @@ createRoot(document.getElementById("root")).render(
     <Myinput>Enter Your Name:</Myinput>
     <MyList>Reverse</MyList>
     <ClickableList items={items} />
+    <MultiButtonCounter />
   </>
 );
