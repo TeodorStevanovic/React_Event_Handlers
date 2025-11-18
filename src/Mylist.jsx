@@ -3,13 +3,17 @@ import { reverse } from "./reverse";
 
 const MyList = (props) => {
   const [list, setList] = useState(["First", "Second", "Third"]);
-  const reverseList = () => {
+  const handleReverse = () => {
     setList(reverse(list));
   };
 
+  const reverseMessage = () => {
+    console.log("Reverse")
+  }
+
   return (
     <>
-      <button onClick={reverseList}>{props.children}</button>
+      <button onClick={() => {handleReverse(); reverseMessage()}}>{props.children}</button>
       <ul>
         {list.map((i) => (
           <li key={i}>{i}</li>

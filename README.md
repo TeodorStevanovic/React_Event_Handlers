@@ -17,3 +17,10 @@ This component demonstrates using a generic reverse function imported from anoth
 The reverse function reverses the order of items in the list.
 Clicking the button triggers an event handler that reverses the list displayed.
 The button text is passed via props.children.
+
+# ClickableList Component
+
+This React component renders a list of clickable items passed via the items prop.
+When an item is clicked, the component finds the clicked item by its id and logs the item's name to the console.
+
+It demonstrates how to handle click events on list elements in React.

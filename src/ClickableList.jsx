@@ -1,7 +1,7 @@
 import React from "react";
 
-const MyListTwo = ({ items }) => {
-  const clickedId = (id) => {
+const ClickableList = ({ items }) => {
+  const onItemClick = (id) => {
     const item = items.find((i) => i.id === id);
     console.log("Clicked", item.name);
   };
@@ -9,7 +9,7 @@ const MyListTwo = ({ items }) => {
   return (
     <ul>
       {items.map((item) => (
-        <li key={item.id} onClick={() => clickedId(item.id)}>
+        <li key={item.id} onClick={() => onItemClick(item.id)}>
           {item.name}
         </li>
       ))}
@@ -17,4 +17,4 @@ const MyListTwo = ({ items }) => {
   );
 };
 
-export default MyListTwo;
+export default ClickableList;
