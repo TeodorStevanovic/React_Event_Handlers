@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 const MultiButtonCounter = () => {
   const [count, setCount] = useState({
-    first: 0,
-    second: 0,
-    third: 0,
+    like: 0,
+    dislike: 0,
   });
 
   const incrementCount = (key) => {
@@ -16,14 +17,11 @@ const MultiButtonCounter = () => {
 
   return (
     <>
-      <button onClick={() => incrementCount("first")}>
-        First {count.first}
+      <button onClick={() => incrementCount("like")}>
+      <FontAwesomeIcon icon={faThumbsUp} />  {count.like}
       </button>
-      <button onClick={() => incrementCount("second")}>
-        Second {count.second}
-      </button>
-      <button onClick={() => incrementCount("third")}>
-        Third {count.third}
+      <button onClick={() => incrementCount("dislike")}>
+        <FontAwesomeIcon icon={faThumbsDown}/>  {count.dislike}
       </button>
     </>
   );

@@ -24,3 +24,36 @@ This React component renders a list of clickable items passed via the items prop
 When an item is clicked, the component finds the clicked item by its id and logs the item's name to the console.
 
 It demonstrates how to handle click events on list elements in React.
+
+# MultiButtonCounter Component
+
+A simple React component that provides Like and Dislike buttons with individual counters.  
+FontAwesome icons are used for clear visual representation, and each click increases the appropriate counter.
+
+## Features
+
+- Like and Dislike buttons
+- Individual counters for each reaction
+- Clean and minimal UI
+- FontAwesome icons (Thumbs Up / Thumbs Down)
+- Generic increment function for updating counters
+- Added spacing between icons and counters for better readability
+
+## Installation
+
+Install FontAwesome packages:
+
+npm install @fortawesome/react-fontawesome
+npm install @fortawesome/free-solid-svg-icons
+
+## Usage
+
+Import and render the component:
+
+```js
+import MultiButtonCounter from "./MultiButtonCounter";
+
+function App() {
+  return <MultiButtonCounter />;
+}
+```
