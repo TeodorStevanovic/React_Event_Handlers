@@ -57,3 +57,26 @@ function App() {
   return <MultiButtonCounter />;
 }
 ```
+
+# ClickCounter Component
+
+This React component demonstrates the use of inline event handlers with arrow functions.
+
+## Features
+
+- Displays a counter initialized to zero.
+- "+" button increases the counter by 1 using an inline arrow function in the onClick handler.
+- "Reset" button resets the counter to zero, also using an inline arrow function.
+- Simple and clean example of managing state with useState and inline event handlers.
+
+## Usage
+
+Import and use the ClickCounter component in your React app:
+
+```js
+import ClickCounter from "./ClickCounter";
+
+function App() {
+  return <ClickCounter />;
+}
+```

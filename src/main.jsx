@@ -4,6 +4,7 @@ import Myinput from "./MyInput";
 import MyList from "./MyList";
 import ClickableList from "./ClickableList";
 import MultiButtonCounter from "./MultiButtonCounter";
+import ClickCounter from "../ClickCounter";
 
 const items = [
   { id: 0, name: "First" },
@@ -18,5 +19,6 @@ createRoot(document.getElementById("root")).render(
     <MyList>Reverse</MyList>
     <ClickableList items={items} />
     <MultiButtonCounter />
+    <ClickCounter />
   </>
 );
